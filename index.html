@@ -171,6 +171,26 @@
       transform: scale(1.05);
     }
 
+.promo-video {
+  position: relative;
+  width: 100%;
+  max-width: 900px;     /* same feel as YouTube player */
+  margin: 40px auto;    /* center on the page */
+  aspect-ratio: 16 / 9; /* force video to widescreen */
+  background: #000;     /* fallback */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.promo-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* fill while keeping ratio */
+  display: block;
+}
+
+      
     /* Stats Section */
     .stats {
       text-align: center;
